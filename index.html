@@ -13,7 +13,8 @@
 <body >
         <h1>Coffee!</h1>
 
-        <hr class="mb-5">
+<!--        //<hr class="mb-5">-->
+        <hr style="width:80%; margin: auto;" />
 <!--solid line under header ^-->
 
 
@@ -31,21 +32,41 @@
                         </thead>
                         <tbody id="coffees"></tbody>
                     </table>
-
-
-
                 </div>
                 <div class="col">
 <!--                    container 2 with drop-downs showing-->
-                    Form2
+                    <div class = 'Roast'>
+                        Roast
                     <form>
                     <label for="roast-selection"></label>
                     <select id="roast-selection">
                         <option>light</option>
                         <option>medium</option>
                         <option>dark</option>
+                        <option selected = "all">all</option>
                     </select>
-                    <input id="submit" type="submit" />
+<!--                    <input id="submit" type="submit" />-->
+<!--                        <br>-->
+                        <div class="form-group">
+                            <label for="Coffee Name" class="form-label">Coffee Name</label>
+                            <input type="text" id="Coffee Name" name="Coffee Name" class="form-control">
+                            <input id="submit" type="submit" />
+                            <hr>
+                            <h1>Add a Coffee</h1>
+                            Roast
+                            <form>
+                                <label for="roast-selection"></label>
+                                <select id="roast-selection">
+                                    <option selected>light</option>
+                                    <option>medium</option>
+                                    <option>dark</option>
+                                </select>
+                                <div class="form-group">
+                                    <label for="Name" class="form-label1">Name</label>
+                                    <br>
+                                    <input type="text" id="Name" name="Name" class="form-control">
+                                    <input id="submit" type="submit" />
+                        </div>
                     </form>
 
                 </div>

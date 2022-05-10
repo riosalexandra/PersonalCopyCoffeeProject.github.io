@@ -1,6 +1,6 @@
-body {
-    background-image: url("IMG/seamless-coffee-pattern.jpeg");
-}
+/*body {*/
+/*    background-image: url("IMG/seamless-coffee-pattern.jpeg");*/
+/*}*/
 
 table {
     border-collapse: collapse;
@@ -16,7 +16,32 @@ td, th {
 hr {
     border-color: ;
     border-bottom-style: solid grey;
-    width: 80%;
+    width: auto;
     margin: auto;
+}
 
+.form-group {
+    font-weight: bold;
+}
+
+#roast-selection {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+#submit {
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: deepskyblue;
+    color: white;
+    border-radius: 8px;
+}
+
+.Roast {
+    font-weight: bold;
 }

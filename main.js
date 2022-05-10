@@ -50,7 +50,11 @@ var coffees = [
 
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
+var newSubmitButton = document.querySelector('#new-submit');
+
 var roastSelection = document.querySelector('#roast-selection');
+var newRoastSelection = document.querySelector('#new-roast-selection');
+
 
 tbody.innerHTML = renderCoffees(coffees);
 

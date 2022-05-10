@@ -14,8 +14,8 @@ td, th {
 
 
 hr {
-    border-color: ;
-    border-bottom-style: solid grey;
+    /*border-color: ;*/
+    border-bottom: solid grey;
     width: auto;
     margin: auto;
 }
@@ -24,7 +24,7 @@ hr {
     font-weight: bold;
 }
 
-#roast-selection {
+#roast-selection, #new-roast-selection {
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -32,7 +32,7 @@ hr {
     margin-bottom: 5px;
 }
 
-#submit {
+#submit, #new-submit {
     margin-top: 10px;
     width: 100%;
     padding-top: 5px;
@@ -45,3 +45,6 @@ hr {
 .Roast {
     font-weight: bold;
 }
+
+
+

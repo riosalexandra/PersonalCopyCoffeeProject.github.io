@@ -1,18 +1,18 @@
 "use strict"
 
 function renderCoffee(coffee) {
-    var html = '<tr class="coffee">';
-    html += '<td>' + coffee.id + '</td>';
-    html += '<td>' + coffee.name + '</td>';
-    html += '<td>' + coffee.roast + '</td>';
-    html += '</tr>';
+    var html = '<div class="coffee">';
+    // html += '<td>' + coffee.id + '</td>';
+    html += '<h2>' + coffee.name + '</h2>';
+    html += '<p>' + coffee.roast + '</p>';
+    html += '</div>';
 
     return html;
 }
 
 function renderCoffees(coffees) {
     var html = '';
-    for(var i = coffees.length - 1; i >= 0; i--) {
+    for(var i = coffees.length - 1; i >= 0; i++) {
         html += renderCoffee(coffees[i]);
     }
     return html;
@@ -23,7 +23,7 @@ function updateCoffees(e) {
     var selectedRoast = roastSelection.value;
     var filteredCoffees = [];
     coffees.forEach(function(coffee) {
-        if (coffee.roast === selectedRoast) {
+        if (coffee.roast === selectedRoast && coffee.name.toLowerCase().includes(searchbar.value.toLowerCase())){
             filteredCoffees.push(coffee);
         }
     });
@@ -50,12 +50,11 @@ var coffees = [
 
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
-var newSubmitButton = document.querySelector('#new-submit');
-
 var roastSelection = document.querySelector('#roast-selection');
-var newRoastSelection = document.querySelector('#new-roast-selection');
+var searchbar = document.querySelector(coffees);
 
 
 tbody.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
+searchbar.addEventListener('keyup', updateCoffees);

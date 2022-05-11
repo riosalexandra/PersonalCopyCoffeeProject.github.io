@@ -1,6 +1,7 @@
-/*body {*/
-/*    background-image: url("IMG/seamless-coffee-pattern.jpeg");*/
-/*}*/
+body {
+    background-image: url("IMG/pngtree-coffee-shop-poster.jpeg");
+    background-size: 495px;
+}
 
 table {
     border-collapse: collapse;
@@ -16,7 +17,7 @@ td, th {
 hr {
     /*border-color: ;*/
     border-bottom: solid grey;
-    width: auto;
+    width: 80%;
     margin: auto;
 }
 
@@ -41,7 +42,7 @@ hr {
 
 
 #roast-selection, #new-roast-selection {
-    width: 100%;
+    width: 80%;
     padding-top: 5px;
     padding-bottom: 5px;
     border-radius: 3px;
@@ -50,10 +51,10 @@ hr {
 
 #submit, #submit2 {
     margin-top: 10px;
-    width: 100%;
+    width: 80%;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: deepskyblue;
+    background-color: brown;
     color: white;
     border-radius: 8px;
 }
@@ -70,4 +71,15 @@ padding-top: 20px
 
 .coffee p {
     text-align: center;
+    color: brown;
+    font-weight: bold;
+}
+.coffee {
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+}
+
+#search-bar, #search-bar2 {
+    width: 80%;
 }

@@ -12,7 +12,7 @@ function renderCoffee(coffee) {
 
 function renderCoffees(coffees) {
     var html = '';
-    for(var i = coffees.length - 1; i >= 0; i++) {
+    for(var i = coffees.length - 1; i >= 0; i--) {
         html += renderCoffee(coffees[i]);
     }
     return html;
@@ -24,11 +24,12 @@ function updateCoffees(e) {
     var filteredCoffees = [];
     console.log(searchbar.value, roastSelection.value)
     coffees.forEach(function(coffee) {
-        if ((coffee.roast === selectedRoast || selectedRoast === "All") && (searchbar.value.trim() === '' || coffee.name.toLowerCase().includes(searchbar.value.toLowerCase()))) {
+        if ((coffee.roast === selectedRoast || selectedRoast === "all") && (searchbar.value.trim() === '' || coffee.name.toLowerCase().includes(searchbar.value.toLowerCase()))) {
             console.log(coffee)
             filteredCoffees.push(coffee);
         }
     });
+    console.log(filteredCoffees);
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
@@ -64,5 +65,5 @@ var searchbar = document.querySelector('#search-bar');
 tbody.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
-searchbar.addEventListener('keyup', updateCoffees);
+searchbar.addEventListener('input', updateCoffees);
 

@@ -50,23 +50,17 @@ var coffees = [
 
 var tbody = document.querySelector('#coffees');
 var submitButton = document.querySelector('#submit');
-<<<<<<< HEAD
 var roastSelection = document.querySelector('#roast-selection');
-var searchbar = document.querySelector(coffees);
-=======
+var searchbar = document.querySelector('#search-bar');
 // var newSubmitButton = document.querySelector('#new-submit');
-
-var roastSelection = document.querySelector('#roast-selection');
-var searchbar = document.querySelector("#search-bar");
+//
+// var roastSelection = document.querySelector('#roast-selection');
+// var searchbar = document.querySelector("#search-bar");
 // var newRoastSelection = document.querySelector('#new-roast-selection');
->>>>>>> 43c14f77c973d77336f011e545986e2f047f5408
 
 
 tbody.innerHTML = renderCoffees(coffees);
 
 submitButton.addEventListener('click', updateCoffees);
-<<<<<<< HEAD
 searchbar.addEventListener('keyup', updateCoffees);
-=======
-searchbar.addEventListener("keyup", updateCoffees);
->>>>>>> 43c14f77c973d77336f011e545986e2f047f5408
+

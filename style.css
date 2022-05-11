@@ -20,9 +20,25 @@ hr {
     margin: auto;
 }
 
-.form-group {
-    font-weight: bold;
+.container-one {
+    display: flex;
 }
+
+.container-two {
+    display: flex;
+}
+
+.col-8 {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 
 #roast-selection, #new-roast-selection {
     width: 100%;
@@ -32,7 +48,7 @@ hr {
     margin-bottom: 5px;
 }
 
-#submit, #new-submit {
+#submit, #submit2 {
     margin-top: 10px;
     width: 100%;
     padding-top: 5px;
@@ -48,5 +64,10 @@ padding-top: 20px
 }
 
 
+#coffees {
+    margin-right: 0px;
+}
 
-
+.coffee p {
+    text-align: center;
+}

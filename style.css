@@ -50,10 +50,10 @@ hr {
 
 #submit, #submit2 {
     margin-top: 10px;
-    width: 80%;
+    width: 70%;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: brown;
+    background-color: saddlebrown;
     color: white;
     border-radius: 8px;
 }

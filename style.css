@@ -1,6 +1,6 @@
 body {
-    background-image: url("IMG/pngtree-coffee-shop-poster.jpeg");
-    background-size: 495px;
+    background-image: url("IMG/coffeebean-and-mug.jpeg");
+    background-size: 100%;
 }
 
 table {
@@ -77,6 +77,13 @@ hr {
     margin: auto;
     width: 50%;
     justify-content: center;
+}
+
+.mug-and-bean {
+    margin-left: auto;
+    margin-right: auto;
+    /*display: block;*/
+    border-radius: 50%;
 }
 
 #search-bar, #search-bar2 {

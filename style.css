@@ -82,8 +82,10 @@ hr {
 .mug-and-bean {
     margin-left: auto;
     margin-right: auto;
-    /*display: block;*/
+    display: block;
     border-radius: 50%;
+    /*width: 15px; <--- causes logo image to not be centered?? */
+    length: 5px;
 }
 
 #search-bar, #search-bar2 {

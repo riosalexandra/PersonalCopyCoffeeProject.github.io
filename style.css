@@ -1,7 +1,32 @@
 body {
-    background-image: url("IMG/coffeebean-and-mug.jpeg");
-    background-size: 100%;
-    object-fit: cover;
+    background: url("IMG/coffeebean-and-mug.jpeg") no-repeat center fixed;
+    background-size: cover;
+    /*object-fit: cover;*/
+}
+
+ul {
+    list-style-type: none;
+    background-color: saddlebrown;
+    overflow: hidden;
+    margin: 10px;
+    padding: 0;
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rosybrown;
 }
 
 table {
